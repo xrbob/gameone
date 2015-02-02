@@ -21,6 +21,10 @@ public class Assets {
     public static Image tilegrassBot;
     public static Image tilegrassLeft;
     public static Image tilegrassRight;
+    public static Image characterJump;
+    public static Image characterDown;
+    public static Image button;
+
 
 
 
