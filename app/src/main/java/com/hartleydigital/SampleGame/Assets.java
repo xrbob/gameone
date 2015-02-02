@@ -1,6 +1,7 @@
 package com.hartleydigital.SampleGame;
 
 import com.hartleydigital.framework.Image;
+import com.hartleydigital.framework.Music;
 import com.hartleydigital.framework.Sound;
 
 public class Assets {
@@ -25,15 +26,17 @@ public class Assets {
     public static Image characterDown;
     public static Image button;
 
-
-
-
-
-
-
-
-
-
     public static Sound click;
+    public static Music theme;
+
+    public static void load(SampleGame sampleGame) {
+
+        theme = sampleGame.getAudio().createMusic("assets/menutheme.mp3");
+
+        theme.setLooping(true);
+        theme.setVolume(0.85f);
+        theme.play();
+        
+    }
 
 }
